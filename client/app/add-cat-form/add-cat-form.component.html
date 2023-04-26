@@ -1,0 +1,26 @@
+<div class="card">
+  <h2 class="card-header">Add new project</h2>
+  <div class="card-body">
+    <form [formGroup]="addCatForm" (ngSubmit)="addCat()">
+      <div class="row row-cols-1 row-cols-sm-auto g-2">
+        <div class="col">
+          <input class="form-control" type="text" name="name"
+            formControlName="name" placeholder="Name">
+        </div>
+        <div class="col">
+          <input class="form-control" type="number" name="age"
+            formControlName="age" placeholder="Duration" min="0">
+        </div>
+        <div class="col">
+          <input class="form-control" type="number" name="weight"
+            formControlName="weight" placeholder="Priority" step="any" min="0">
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" type="submit" [disabled]="!addCatForm.valid">
+            <i class="fa fa-plus"></i> Add
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

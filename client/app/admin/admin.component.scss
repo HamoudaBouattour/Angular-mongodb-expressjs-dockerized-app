@@ -1,0 +1,33 @@
+.table {
+    width: 50%;
+    td,
+    th {
+      width: 25%;
+      position: sticky;
+      
+    }
+    padding: 1rem;
+    margin-left: 420px;
+    background-color: aliceblue;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem black;
+    border-radius: .8rem;
+    overflow: hidden;
+  }
+ 
+  
+  .card-header{
+    background-color: black;
+    font-size: 40px;
+    color: #FFC233;
+    margin-left: 48%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    
+  }
+  .card{
+  background-color: black;
+  width: 90%;
+  }
+  
+  
